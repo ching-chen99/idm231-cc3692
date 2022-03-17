@@ -1,0 +1,388 @@
+/* GENERAL */
+@font-face {
+	font-family: 'zh-cn';
+	src: url('../font/zh-cn.ttf') format('tff');
+	font-style: normal;
+}
+
+body {
+	background-image: url("../gif/lanternfest.gif");
+	background-position: center;
+	position: relative;
+	background-color: #212121;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0.8rem;
+}
+
+h1.title {
+	color: white;
+	font-family: "zh-cn", serif;
+	font-weight: 500;
+	font-style: normal;
+	text-align: center;
+	padding-bottom: 0.3rem;
+	font-size: 50px;
+}
+
+.button {
+	width: 100px;
+	height: 100px;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	border-radius: 40px;
+	cursor: pointer;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.row1 {
+	display: table;
+	margin: 0 auto;
+}
+
+#albedo {
+	background-image: url('../img/albedo2.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 2rem;
+}
+
+#albedo:hover {
+	background-image: url('../img/albedo2.jpg');
+	filter: drop-shadow(0 0 30px yellow) brightness(150%)
+}
+
+#amber {
+	background-image: url('../img/amber2.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 2rem;
+}
+
+#amber:hover {
+	background-image: url('../img/amber2.jpg');
+	filter: drop-shadow(0 0 30px yellow) brightness(150%)
+}
+
+.row4 {
+	display: table;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+
+.row2,
+.row3,
+.row5,
+.row6 {
+	display: table;
+	margin: 0 auto;
+}
+
+#ayaka {
+	background-image: url('../img/ayaka2.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 12rem;
+}
+
+#ayaka:hover {
+	background-image: url('../img/ayaka2.jpg');
+	filter: drop-shadow(0 0 30px yellow) brightness(150%)
+}
+
+#beidou {
+	background-image: url('../img/beidou2.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 12rem;
+}
+
+#beidou:hover {
+	background-image: url('../img/beidou2.jpg');
+	filter: drop-shadow(0 0 30px yellow) brightness(150%)
+}
+
+#childe {
+	background-image: url('../img/childe2.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 18rem;
+	margin-top: 2rem;
+}
+
+#childe:hover {
+	background-image: url('../img/childe2.jpg');
+	filter: drop-shadow(0 0 30px yellow) brightness(150%)
+}
+
+#ganyu {
+	background-image: url('../img/ganyu2.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 18rem;
+	margin-top: 2rem;
+}
+
+#ganyu:hover {
+	background-image: url('../img/ganyu2.jpg');
+	filter: drop-shadow(0 0 30px yellow) brightness(150%)
+}
+
+#kazuha {
+	background-image: url('../img/kazuha2.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 18rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+#kazuha:hover {
+	background-image: url('../img/kazuha2.jpg');
+	filter: drop-shadow(0 0 30px yellow) brightness(150%)
+}
+
+#raiden {
+	background-image: url('../img/raiden2.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 18rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+#raiden:hover {
+	background-image: url('../img/raiden2.jpg');
+	filter: drop-shadow(0 0 30px yellow) brightness(150%)
+}
+
+#thoma {
+	background-image: url('../img/thoma2.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 12rem;
+}
+
+#thoma:hover {
+	background-image: url('../img/thoma2.jpg');
+	filter: drop-shadow(0 0 30px yellow) brightness(150%)
+}
+
+#venti {
+	background-image: url('../img/venti2.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 12rem;
+}
+
+#venti:hover {
+	background-image: url('../img/venti2.jpg');
+	filter: drop-shadow(0 0 30px yellow) brightness(150%)
+}
+
+#xiao {
+	background-image: url('../img/xiao2.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 2rem;
+}
+
+#xiao:hover {
+	background-image: url('../img/xiao2.jpg');
+	filter: drop-shadow(0 0 30px yellow) brightness(150%)
+}
+
+#zhongli {
+	background-image: url('../img/zhongli2.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 2rem;
+}
+
+#zhongli:hover {
+	background-image: url('../img/zhongli2.jpg');
+	filter: drop-shadow(0 0 30px yellow) brightness(150%)
+}
+
+#bdaylabel {
+	width: 280px;
+	height: 100px;
+}
+
+.userinfo {
+	text-align: center;
+	top: 40%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	float: center;
+	width: 300px;
+}
+#btn-symbol-open {
+	background-color: rgba(255, 255, 255, 0.4);
+	border: 2px solid blue;
+	border-radius: 50px;
+	padding: 8px 14px;
+	margin: 2em;
+	text-align: center;
+	margin: auto;
+	float: center;
+	color: white;
+	box-shadow: 0px 0px 20px rgb(117, 117, 117);
+	background: none;
+	cursor: pointer;
+}
+
+#btn-symbol-open:hover {
+	background-color: #5a5a5a;
+	cursor: pointer;
+	transition: 0.35s ease-in-out;
+}
+
+#close-help-symbol,
+#btn-symbol-close {
+	background-color: rgba(255, 255, 255, 0.4);
+	border: 2px solid blue;
+	border-radius: 50px;
+	padding: 8px 14px;
+	margin: 2em;
+	text-align: center;
+	margin: auto;
+	float: center;
+	color: 212121;
+	box-shadow: 0px 0px 20px rgb(117, 117, 117);
+	background: none;
+	cursor: pointer;
+}
+
+#bday {
+	background: #5a5a5a;
+	color: white;
+	font-size: 90%;
+	border: none;
+	border-radius: 70px;
+	width: 150px;
+	padding: 0.5rem;
+	margin: 1.5rem 0;
+	box-shadow: 0px 0px 10px rgb(141, 141, 141);
+}
+
+#userSubmit input {
+	background-color: rgba(255, 255, 255, 0.4);
+	border: 2px solid blue;
+	border-radius: 60px;
+	padding: 10px;
+	color: white;
+	font-size: 80%;
+	letter-spacing: 2px;
+	box-shadow: 0px 0px 20px rgb(117, 117, 117);
+	cursor: pointer;
+}
+
+#userSubmit input:hover {
+	background-color: #5a5a5a;
+	transition: 0.35s ease-in-out;
+}
+
+[hidden] {
+	display: none !important;
+}
+
+/* Symbol */
+.symbol {
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.symbol .blanket,
+.helpSymbol {
+	background-color: rgba(0, 0, 0, .8);
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.symbol-bod {
+	background-color: #fff;
+	border: 0.5rem solid rgb(77, 77, 77);
+	border-radius: 50%;
+	height: 500px;
+	width: 500px;
+	max-width: 50vw;
+	position: relative;
+	z-index: 101;
+	padding: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 2rem;
+	font-weight: 300;
+	text-align: center;
+	margin: 0 auto;
+	top: 20%;
+}
+
+.symbol-body {
+	background-color: #fff;
+	border: 1rem solid blue;
+	border-radius: 50%;
+	height: 60vh;
+	max-width: 60vw;
+	position: relative;
+	z-index: 101;
+	padding: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 2rem;
+	font-weight: 300;
+	text-align: center;
+	top: 5%;
+}
+
+#imgOutput {
+	width: 200px;
+	height: 110px;
+	border-radius: 3%;
+}
+
+#titleOutput,
+#title {
+	font-family: "zh-cn", serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 120%;
+}
+
+#dateRange {
+	font-family: "zh-cn", serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 40%;
+}
+
+#infoOutput,
+#helptxt {
+	font-family: "zh-cn", serif;
+	font-weight: 300;
+	font-style: normal;
+	width: 500px;
+	font-size: 70%;
+	padding: 0 2rem;
+}

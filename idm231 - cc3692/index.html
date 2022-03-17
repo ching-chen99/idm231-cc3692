@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Genshin Impact Zodiac</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/normalize.css" rel="normalizer">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="wrapper">
+    <!--Preload sound files-->
+    <audio id="sndAlbedo" src="audio/Pisces_Albedo.mp3" preload="auto"></audio>
+    <audio id="sndAmber" src="audio/Sagittarius_Amber.mp3" preload="auto"></audio>
+    <audio id="sndAyaka" src="audio/Cancer_Ayaka.mp3" preload="auto"></audio>
+    <audio id="sndBeidou" src="audio/Leo_Beidou.mp3" preload="auto"></audio>
+    <audio id="sndChilde" src="audio/Gemini_Childe.mp3" preload="auto"></audio>
+    <audio id="sndGanyu" src="audio/Virgo_Ganyu.mp3" preload="auto"></audio>
+    <audio id="sndKazuha" src="audio/Scorpio_Kazuha.mp3" preload="auto"></audio>
+    <audio id="sndRaiden" src="audio/Capricorn_Raiden.mp3" preload="auto"></audio>
+    <audio id="sndThoma" src="audio/Aries_Thoma.mp3" preload="auto"></audio>
+    <audio id="sndVenti" src="audio/Libra_Venti.mp3" preload="auto"></audio>
+    <audio id="sndXiao" src="audio/Aquarius_Xiao.mp3" preload="auto"></audio>
+    <audio id="sndZhongli" src="audio/Taurus_Zhongli.mp3" preload="auto"></audio>
+    <div class="intro">
+        <h1 class="title">Genshin Impact Zodiac</h1>
+    </div>
+    <div class="wheel">
+        <div class="row1">
+            <button class="button" id="albedo"></button>
+            <button class="button" id="amber"></button>
+        </div>
+        <div class="row2">
+            <button class="button" id="ayaka"></button>
+            <button class="button" id="beidou"></button>
+        </div>
+        <div class="row3">
+            <button class="button" id="childe"></button>
+            <button class="button" id="ganyu"></button>
+        </div>
+        <div class="row4">
+            <button class="button" id="kazuha"></button>
+            <button class="button" id="raiden"></button>
+        </div>
+        <div class="row5">
+            <button class="button" id="thoma"></button>
+            <button class="button" id="venti"></button>
+        </div>
+        <div class="row6">
+            <button class="button" id="xiao"></button>
+            <button class="button" id="zhongli"></button>
+        </div>
+        <div class="userinfo">
+            <div class="helpButtonClass">
+                <button class="help" id="btn-symbol-open">
+                    <div>?</div>
+                </button>
+            </div>
+            <br>
+            <img src="./img/birthday.jpg" alt="Enter Your Birthday" id="bdaylabel">
+            <input type="date" name="birthday" id="bday" placeholder="mm/dd/yyyy" />
+            <div id="userSubmit">
+                <input type="submit" value="SUBMIT" />
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Custom Symbol -->
+    <div id="symbol" class="symbol" hidden>
+        <div class="symbol-body">
+            <div class="symbol-content">
+                <div>
+                    <img id="imgOutput">
+                </div>
+                <br>
+                <span id="titleOutput">Title</span> <br> <span id="dateRange">Date Range</span>
+                <div id="infoOutput">
+                    <p>Description of Object is Input here</p>
+                </div>
+                <button id="btn-symbol-close" class="toggle-symbol">Close</button>
+            </div>
+        </div>
+        <div class="blanket"></div>
+    </div>
+
+        <!-- Help Symbol -->
+    <div id="helpSymbol" class="helpSymbol" hidden>
+        <div class="symbol-bod">
+            <div class="symbol-content">
+                <span id="title">Need Help?</span>
+                <div id="moreInfo">
+                    <p id="helptxt">Welcome to the Genshin Impact Zodiac! To find out which
+                        game character represents your zodiac, enter
+                        your birthday and press the submit button. Enjoy!</p>
+                </div>
+                <button id="close-help-symbol" class="toggle-symbol">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/action.js"></script>
+</body>
+
+</html>
